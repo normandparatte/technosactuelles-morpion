@@ -38,7 +38,7 @@ public class MorpionActivity extends AppCompatActivity implements View.OnClickLi
         setContentView(R.layout.activity_menu);
 
         // Récupération des éléments
-        tvPlayer = (TextView) findViewById(R.id.joueur);
+        /*tvPlayer = (TextView) findViewById(R.id.joueur);
         Button c1 = (Button) findViewById(R.id.case1);
         Button c2 = (Button) findViewById(R.id.case2);
         Button c3 = (Button) findViewById(R.id.case3);
@@ -64,7 +64,7 @@ public class MorpionActivity extends AppCompatActivity implements View.OnClickLi
             bt.setBackgroundDrawable(null);
             bt.setOnClickListener(this);
         }
-
+*/
 
 
     }
@@ -79,7 +79,7 @@ public class MorpionActivity extends AppCompatActivity implements View.OnClickLi
 
         // Ajoute le clic sur le plateau (qui permet de déterminer le gagnant)
         switch(view.getId()){
-            case R.id.case1:
+            /*case R.id.case1:
                 plateau[0][0] = currentPlayer;
                 break;
             case R.id.case2:
@@ -107,7 +107,7 @@ public class MorpionActivity extends AppCompatActivity implements View.OnClickLi
                 plateau[2][2] = currentPlayer;
                 break;
             default:
-                return;
+                return;*/
         }
 
         // Prépare l'image

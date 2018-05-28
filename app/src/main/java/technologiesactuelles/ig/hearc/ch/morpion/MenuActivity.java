@@ -22,7 +22,8 @@ public class MenuActivity extends AppCompatActivity {
         bt_jouer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View vue) {
-                System.out.println("Clic sur le bouton bt_jouer");
+                Intent intent = new Intent(MenuActivity.this, MorpionActivity.class);
+                startActivity(intent);
             }
         });
 
