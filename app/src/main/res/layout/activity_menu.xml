@@ -1,18 +1,150 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="technologiesactuelles.ig.hearc.ch.morpion.MenuActivity">
+    android:gravity="center"
+    >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <!-- Grille de jeu -->
+        <!-- Ligne du haut -->
+            <!-- Case haut gauche -->
+            <Button
+                android:id="@+id/case1"
+                android:layout_width="@dimen/size_button"
+                android:layout_height="@dimen/size_button" />
 
-</android.support.constraint.ConstraintLayout>
+            <!-- Case haut centre -->
+            <Button
+                android:id="@+id/case2"
+                android:layout_width="@dimen/size_button"
+                android:layout_height="@dimen/size_button"
+                android:layout_toRightOf="@+id/ligne1"
+                />
+
+            <!-- Case haut droite -->
+            <Button
+                android:id="@+id/case3"
+                android:layout_width="@dimen/size_button"
+                android:layout_height="@dimen/size_button"
+                android:layout_toRightOf="@+id/ligne2"
+                />
+
+        <!-- Ligne du milieu -->
+            <!-- Case milieu gauche -->
+            <Button
+                android:id="@+id/case4"
+                android:layout_width="@dimen/size_button"
+                android:layout_height="@dimen/size_button"
+                android:layout_alignStart="@+id/ligne3"
+                android:layout_below="@+id/ligne3" />
+
+            <!-- Case milieu centre -->
+            <Button
+                android:id="@+id/case5"
+                android:layout_width="@dimen/size_button"
+                android:layout_height="@dimen/size_button"
+                android:layout_below="@+id/ligne3"
+                android:layout_toRightOf="@+id/ligne1"
+                />
+
+            <!-- Case milieu droite -->
+            <Button
+                android:id="@+id/case6"
+                android:layout_width="@dimen/size_button"
+                android:layout_height="@dimen/size_button"
+                android:layout_below="@+id/ligne3"
+                android:layout_toRightOf="@+id/ligne2"
+                />
+
+        <!-- Ligne du bas -->
+            <!-- Case bas gauche -->
+            <Button
+                android:id="@+id/case7"
+                android:layout_width="@dimen/size_button"
+                android:layout_height="@dimen/size_button"
+                android:layout_below="@+id/ligne4"
+                />
+
+            <!-- Case bas centre -->
+            <Button
+                android:id="@+id/case8"
+                android:layout_width="@dimen/size_button"
+                android:layout_height="@dimen/size_button"
+                android:layout_below="@+id/ligne4"
+                android:layout_toRightOf="@+id/ligne1"
+                />
+
+            <!-- Case bas droite -->
+            <Button
+                android:id="@+id/case9"
+                android:layout_width="@dimen/size_button"
+                android:layout_height="@dimen/size_button"
+                android:layout_below="@+id/ligne4"
+                android:layout_toRightOf="@+id/ligne2"
+                />
+
+        <!-- Séparateur -->
+            <!-- Séparateur entre colonne 1 et 2 -->
+            <View
+                android:id="@+id/ligne1"
+                android:layout_width="@dimen/width_line"
+                android:layout_height="0dp"
+                android:layout_toRightOf="@id/case1"
+                android:layout_alignTop="@id/case1"
+                android:layout_alignBottom="@id/case7"
+                android:background="@android:color/black"/>
+
+            <!-- Séparateur entre colonne 2 et 3 -->
+            <View
+                android:id="@+id/ligne2"
+                android:layout_width="@dimen/width_line"
+                android:layout_height="0dp"
+                android:layout_toRightOf="@id/case2"
+                android:layout_alignTop="@id/case1"
+                android:layout_alignBottom="@id/case7"
+                android:background="@android:color/black"/>
+
+            <!-- Séparateur entre ligne 1 et 2 -->
+            <View
+                android:id="@+id/ligne3"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/width_line"
+                android:layout_below="@id/case1"
+                android:layout_alignLeft="@id/case1"
+                android:layout_alignRight="@id/case3"
+                android:background="@android:color/black"/>
+
+            <!-- Séparateur entre ligne 2 et 3 -->
+            <View
+                android:id="@+id/ligne4"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/width_line"
+                android:layout_below="@id/case4"
+
+                android:layout_alignLeft="@id/case1"
+                android:layout_alignRight="@id/case3"
+                android:background="@android:color/black"/>
+
+        <!-- Textview -->
+        <TextView
+            android:id="@+id/auTourDe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/case7"
+            android:layout_marginTop="@dimen/margin_tv"
+            android:text="Au tour du joueur : "
+            />
+
+        <TextView
+            android:id="@+id/joueur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/case7"
+            android:layout_marginTop="@dimen/margin_tv"
+            android:text="X"
+            android:layout_toRightOf="@id/auTourDe"
+            />
+    
+</RelativeLayout>
