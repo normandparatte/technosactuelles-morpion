@@ -1,5 +1,6 @@
 package technologiesactuelles.ig.hearc.ch.morpion;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -39,7 +40,8 @@ public class MenuActivity extends AppCompatActivity {
         bt_classement.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View vue) {
-                System.out.println("Clic sur le bouton bt_classement");
+                Intent intent = new Intent(MenuActivity.this, ClassementActivity.class);
+                startActivity(intent);
             }
         });
 
