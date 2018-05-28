@@ -7,6 +7,9 @@ import android.widget.Button;
 
 public class MenuActivity extends AppCompatActivity {
     private Button bt_jouer = null;
+    private Button bt_joueurs = null;
+    private Button bt_classement = null;
+    private Button bt_options = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,8 +21,36 @@ public class MenuActivity extends AppCompatActivity {
         bt_jouer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View vue) {
-                System.out.println("Est-ce que ca joue ?");
+                System.out.println("Clic sur le bouton bt_jouer");
             }
         });
+
+        bt_joueurs = (Button) findViewById(R.id.bt_joueurs);
+
+        bt_joueurs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View vue) {
+                System.out.println("Clic sur le bouton bt_joueurs");
+            }
+        });
+
+        bt_classement = (Button) findViewById(R.id.bt_classement);
+
+        bt_classement.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View vue) {
+                System.out.println("Clic sur le bouton bt_classement");
+            }
+        });
+
+        bt_options = (Button) findViewById(R.id.bt_options);
+
+        bt_options.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View vue) {
+                System.out.println("Clic sur le bouton bt_options");
+            }
+        });
+
     }
 }
