@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ClassementActivity"></activity>
+        <activity android:name=".ClassementActivity" />
+        <activity android:name=".OptionsActivity"></activity>
     </application>
 
 </manifest>
