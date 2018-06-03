@@ -4,7 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/morpion.iml" filepath="$PROJECT_DIR$/morpion.iml" />
-      <module fileurl="file://C:\Users\normand.paratte\AndroidStudioProjects\morpion\technosactuelles-morpion.iml" filepath="C:\Users\normand.paratte\AndroidStudioProjects\morpion\technosactuelles-morpion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/technosactuelles-morpion.iml" filepath="$PROJECT_DIR$/technosactuelles-morpion.iml" />
+      <module fileurl="file://C:/Users/normand.paratte/AndroidStudioProjects/morpion/technosactuelles-morpion.iml" filepath="C:/Users/normand.paratte/AndroidStudioProjects/morpion/technosactuelles-morpion.iml" />
     </modules>
   </component>
 </project>
