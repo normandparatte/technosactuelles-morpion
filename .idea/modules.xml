@@ -3,8 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\bastien.mittempe\Desktop\IG-TPart 16_19\IG17_18 - S6\635-1.1 Technologies Actuelles\Exercice\technosactuelles-morpion\morpion.iml" filepath="C:\Users\bastien.mittempe\Desktop\IG-TPart 16_19\IG17_18 - S6\635-1.1 Technologies Actuelles\Exercice\technosactuelles-morpion\morpion.iml" />
-      <module fileurl="file://$PROJECT_DIR$/technosactuelles-morpion.iml" filepath="$PROJECT_DIR$/technosactuelles-morpion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/morpion.iml" filepath="$PROJECT_DIR$/morpion.iml" />
       <module fileurl="file://C:\Users\normand.paratte\AndroidStudioProjects\morpion\technosactuelles-morpion.iml" filepath="C:\Users\normand.paratte\AndroidStudioProjects\morpion\technosactuelles-morpion.iml" />
     </modules>
   </component>
