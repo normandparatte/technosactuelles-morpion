@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="technologiesactuelles.ig.hearc.ch.morpion.JoueurActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="Gestion du joueur" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_joueur" />
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="15dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        android:textSize="10pt"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="15dp"
+        android:text="Nom du joueur" />
+
+    <ImageView
+        android:id="@+id/camera"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="170dp"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="280dp"
+        android:layout_marginBottom="30dp"
+        android:weightSum="2"> <!-- nombre de colonnes -->
+
+        <TextView
+            android:id="@+id/num_partie"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="N° Partie"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="4dp"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/resultat"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Résultat"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
