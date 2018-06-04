@@ -32,7 +32,8 @@ public class MenuActivity extends AppCompatActivity {
         bt_joueurs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View vue) {
-                System.out.println("Clic sur le bouton bt_joueurs");
+                Intent intent = new Intent(MenuActivity.this, JoueurActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -56,5 +57,10 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void openJoueur(View view){
+        Intent intent = new Intent(MenuActivity.this, MorpionActivity.class);
+        startActivity(intent);
     }
 }

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">morpion</string>
+    <string name="title_activity_joueur">Gestion des joueurs</string>
 </resources>
