@@ -42,6 +42,7 @@
             android:layout_height="wrap_content"
             android:text="Gestion des joueurs"
             android:layout_below="@+id/bt_jouer"
+            android:onClick="openJoueur"
             tools:ignore="MissingConstraints" />
 
         <Button
